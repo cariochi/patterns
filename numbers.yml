@@ -1,0 +1,25 @@
+patterns:
+  number:
+    real:
+      - "\\d+\\.\\d+"
+    int:
+      - "\\d+"
+      - 1 thousand
+  scale:
+    - thousand
+    - million
+    - billion
+  percent:
+    - 100%
+
+tests:
+  1:
+    "{@number:int: 1}"
+  1.1:
+    "{@number:real: 1.1}"
+  1.1 million:
+    "{@number:int: {@number:real: 1.1} {@scale: million}}"
+  67.7 billion:
+    "{@number:int: {@number:real: 67.7} {@scale: billion}}"
+  10%:
+    "{@percent: {@number:int: 10}%}"

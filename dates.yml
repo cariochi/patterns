@@ -1,0 +1,25 @@
+imports:
+  - numbers.yml
+
+patterns:
+  date:
+    - "January {@day: 1}, {@year: 2000}"
+  month:
+      - (!)January
+      - (!)February
+      - (!)March
+      - (!)April
+      - (!)May
+      - (!)June
+      - (!)July
+      - (!)August
+      - (!)September
+      - (!)October
+      - (!)November
+      - (!)December
+
+tests:
+  February 20, 1978:
+    "{@date: {@month: February} {@day: {@number:int: 20}}, {@year: {@number:int: 1978}}}"
+  May 1, 2020:
+    "{@date: {@month: May} {@day: {@number:int: 1}}, {@year: {@number:int: 2020}}}"
