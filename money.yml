@@ -1,0 +1,17 @@
+imports:
+  - numbers.yml
+
+patterns:
+  currency:
+    usd:
+      - "\\$"
+    eur:
+      - €
+  money:
+    - $1
+
+tests:
+  $1:
+    "{@money: {@currency:usd: $}{@number:int: 1}}"
+  €5.5 billion:
+    "{@money: {@currency:eur: €}{@number:int: {@number:real: 5.5} {@scale: billion}}}"
