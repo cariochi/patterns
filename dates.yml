@@ -20,6 +20,6 @@ patterns:
 
 tests:
   February 20, 1978:
-    "{@date: {@month: February} {@day: {@number:int: 20}}, {@year: {@number:int: 1978}}}"
+    "{@date: {@month: February} {@day: {@number.int: 20}}, {@year: {@number.int: 1978}}}"
   May 1, 2020:
-    "{@date: {@month: May} {@day: {@number:int: 1}}, {@year: {@number:int: 2020}}}"
+    "{@date: {@month: May} {@day: {@number.int: 1}}, {@year: {@number.int: 2020}}}"

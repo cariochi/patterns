@@ -1,25 +1,31 @@
 patterns:
+
   number:
     real:
       - "\\d+\\.\\d+"
     int:
       - "\\d+"
       - 1 thousand
+
   scale:
-    - thousand
-    - million
-    - billion
+    E3:
+      - thousand
+    E6:
+      - million
+    E9:
+      - billion
+
   percent:
     - 100%
 
 tests:
   1:
-    "{@number:int: 1}"
+    "{@number.int: 1}"
   1.1:
-    "{@number:real: 1.1}"
+    "{@number.real: 1.1}"
   1.1 million:
-    "{@number:int: {@number:real: 1.1} {@scale: million}}"
+    "{@number.int: {@number.real: 1.1} {@scale.E6: million}}"
   67.7 billion:
-    "{@number:int: {@number:real: 67.7} {@scale: billion}}"
+    "{@number.int: {@number.real: 67.7} {@scale.E9: billion}}"
   10%:
-    "{@percent: {@number:int: 10}%}"
+    "{@percent: {@number.int: 10}%}"
