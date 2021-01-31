@@ -1,5 +1,8 @@
+name: com.cariochi.tests.dates
+version: 1.0
+
 imports:
-  - numbers.yml
+  - "com.cariochi.tests.numbers:1.0"
 
 patterns:
   currency:

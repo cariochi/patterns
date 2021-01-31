@@ -1,3 +1,6 @@
+name: com.cariochi.tests.numbers
+version: 1.0
+
 patterns:
 
   number:
