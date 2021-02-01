@@ -17,4 +17,4 @@ tests:
   $1:
     "{@money: {@currency.usd: $}{@number.int: 1}}"
   €5.5 billion:
-    "{@money: {@currency.eur: €}{@number.int: {@number.real: 5.5} {@scale.E9: billion}}}"
+    "{@money: {@currency.eur: €}{@number.int: {@number.real: 5.5} {@multiplier.E9: billion}}}"
