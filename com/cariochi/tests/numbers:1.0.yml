@@ -10,7 +10,7 @@ patterns:
       - "\\d+"
       - 1 thousand
 
-  scale:
+  multiplier:
     E3:
       - thousand
     E6:
@@ -27,8 +27,8 @@ tests:
   1.1:
     "{@number.real: 1.1}"
   1.1 million:
-    "{@number.int: {@number.real: 1.1} {@scale.E6: million}}"
+    "{@number.int: {@number.real: 1.1} {@multiplier.E6: million}}"
   67.7 billion:
-    "{@number.int: {@number.real: 67.7} {@scale.E9: billion}}"
+    "{@number.int: {@number.real: 67.7} {@multiplier.E9: billion}}"
   10%:
     "{@percent: {@number.int: 10}%}"
