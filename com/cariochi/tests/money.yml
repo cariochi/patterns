@@ -1,0 +1,13 @@
+imports:
+  - "numbers.yml"
+
+patterns:
+
+  Currency:
+    Usd:
+      - "$"
+    Eur:
+      - "€"
+
+  Money:
+    - "$1"

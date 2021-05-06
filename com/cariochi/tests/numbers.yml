@@ -1,0 +1,19 @@
+patterns:
+
+  Number:
+    Real:
+      - "\\d+\\.\\d+"
+    Int:
+      - "\\d+"
+      - "1 thousand"
+
+  Multiplier:
+    E3:
+      - "thousand"
+    E6:
+      - "million"
+    E9:
+      - "billion"
+
+  Percent:
+    - "100%"
