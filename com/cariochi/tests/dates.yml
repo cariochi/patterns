@@ -4,18 +4,18 @@ imports:
 patterns:
 
   Date:
-    - "{#month: January} {#day: 1}, {#year: 2000}"
+    - "~{#month: January} {#day: 1}, {#year: 2000}"
 
   Month:
-      - "(!)January"
-      - "(!)February"
-      - "(!)March"
-      - "(!)April"
-      - "(!)May"
-      - "(!)June"
-      - "(!)July"
-      - "(!)August"
-      - "(!)September"
-      - "(!)October"
-      - "(!)November"
-      - "(!)December"
+    - "January"
+    - "February"
+    - "March"
+    - "April"
+    - "May"
+    - "June"
+    - "July"
+    - "August"
+    - "September"
+    - "October"
+    - "November"
+    - "December"

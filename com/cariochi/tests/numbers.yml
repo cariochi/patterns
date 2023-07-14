@@ -2,10 +2,10 @@ patterns:
 
   Number:
     Real:
-      - "\\d+\\.\\d+"
+      - "\d+\.\d+"
     Int:
-      - "\\d+"
-      - "1 thousand"
+      - "\d+"
+      - "~1 thousand"
 
   Multiplier:
     E3:
@@ -16,4 +16,4 @@ patterns:
       - "billion"
 
   Percent:
-    - "100%"
+    - "~100%"
