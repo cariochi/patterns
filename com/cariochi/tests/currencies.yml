@@ -1,0 +1,15 @@
+imports:
+  - numbers.yml
+
+patterns:
+
+  Currency:
+    USD:
+      - $
+    EUR:
+      - €
+    POUND:
+      - £
+
+  Money:
+    - "~€1"

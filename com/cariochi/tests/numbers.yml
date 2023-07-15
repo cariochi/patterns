@@ -3,7 +3,7 @@ patterns:
   Number:
     Real:
       - "\d+\.\d+"
-    Int:
+    Integer:
       - "\d+"
       - "~1 thousand"
 

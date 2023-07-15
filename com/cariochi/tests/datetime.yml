@@ -1,0 +1,45 @@
+imports:
+  - numbers.yml
+
+patterns:
+
+  Date:
+    - "~{#year: 2000}-{#month: 05}-{#day: 10}"
+    - "~{#month: 07}/{#day: 12}/{#year: 2020}"
+    - "~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}"
+
+  Month:
+    1:
+      - January
+    2:
+      - February
+    3:
+      - March
+    4:
+      - April
+    5:
+      - May
+    6:
+      - June
+    7:
+      - July
+    8:
+      - August
+    9:
+      - September
+    10:
+      - October
+    11:
+      - November
+    12:
+      - December
+
+  TimePeriod:
+    AM:
+      - "(?-i)AM"
+    PM:
+      - "(?-i)PM"
+
+  Time:
+    - "~{#hours: 1}:{#minutes: 30}\s?{#period: AM}"
+    - "~{#hours: 13}:{#minutes: 00}"

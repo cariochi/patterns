@@ -1,0 +1,23 @@
+imports:
+  - numbers.yml
+
+patterns:
+
+  MeasurementUnit:
+    British:
+      Foot:
+        - foot
+        - feet
+        - ft
+      Inch:
+        - inch(es)?
+    SI:
+      Meter:
+        - meters?
+        - metres?
+      Centimeter:
+        - centimeters?
+        - centimetres?
+
+  Measurement:
+    - "~1 meter"
