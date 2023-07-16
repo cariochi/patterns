@@ -1,7 +1,7 @@
 imports:
   - numbers.yml
 
-patterns:
+classes:
 
   Date:
     - "~{#year: 2000}-{#month: 05}-{#day: 10}"

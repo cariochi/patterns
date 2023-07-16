@@ -1,7 +1,7 @@
 imports:
   - numbers.yml
 
-patterns:
+classes:
 
   Currency:
     USD:
