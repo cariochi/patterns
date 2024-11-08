@@ -1,19 +1,31 @@
 classes:
 
-  Number:
-    Real:
+  - class: Real
+    parent: Number
+    patterns:
       - "\d+\.\d+"
-    Integer:
+
+  - class: Integer
+    parent: Number
+    patterns:
       - "\d+"
       - "~1 thousand"
 
-  Multiplier:
-    E3:
+  - class: E3
+    parent: Multiplier
+    patterns:
       - "thousand"
-    E6:
+
+  - class: E6
+    parent: Multiplier
+    patterns:
       - "million"
-    E9:
+
+  - class: E9
+    parent: Multiplier
+    patterns:
       - "billion"
 
-  Percent:
-    - "~100%"
+  - class: Percent
+    patterns:
+      - "~100%"

@@ -3,13 +3,21 @@ imports:
 
 classes:
 
-  Currency:
-    USD:
+  - class: USD
+    parent: Currency
+    patterns:
       - $
-    EUR:
+
+  - class: EUR
+    parent: Currency
+    patterns:
       - €
-    POUND:
+
+  - class: POUND
+    parent: Currency
+    patterns:
       - £
 
-  Money:
-    - "~€1"
+  - class: Money
+    patterns:
+      - "~€1"

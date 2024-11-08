@@ -3,43 +3,83 @@ imports:
 
 classes:
 
-  Date:
-    - "~{#year: 2000}-{#month: 05}-{#day: 10}"
-    - "~{#month: 07}/{#day: 12}/{#year: 2020}"
-    - "~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}"
+  - class: Date
+    patterns:
+      - "~{#year: 2000}-{#month: 05}-{#day: 10}"
+      - "~{#month: 07}/{#day: 12}/{#year: 2020}"
+      - "~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}"
 
-  Month:
-    1:
+  - class: 1
+    parent: Month
+    patterns:
       - January
-    2:
+
+  - class: 2
+    parent: Month
+    patterns:
       - February
-    3:
+
+  - class: 3
+    parent: Month
+    patterns:
       - March
-    4:
+
+  - class: 4
+    parent: Month
+    patterns:
       - April
-    5:
+
+  - class: 5
+    parent: Month
+    patterns:
       - May
-    6:
+
+  - class: 6
+    parent: Month
+    patterns:
       - June
-    7:
+
+  - class: 7
+    parent: Month
+    patterns:
       - July
-    8:
+
+  - class: 8
+    parent: Month
+    patterns:
       - August
-    9:
+
+  - class: 9
+    parent: Month
+    patterns:
       - September
-    10:
+
+  - class: 10
+    parent: Month
+    patterns:
       - October
-    11:
+
+  - class: 11
+    parent: Month
+    patterns:
       - November
-    12:
+
+  - class: 12
+    parent: Month
+    patterns:
       - December
 
-  TimePeriod:
-    AM:
+  - class: AM
+    parent: TimePeriod
+    patterns:
       - "(?-i)AM"
-    PM:
+
+  - class: PM
+    parent: TimePeriod
+    patterns:
       - "(?-i)PM"
 
-  Time:
-    - "~{#hours: 1}:{#minutes: 30}\s?{#period: AM}"
-    - "~{#hours: 13}:{#minutes: 00}"
+  - class: Time
+    patterns:
+      - "~{#hours: 1}:{#minutes: 30}\s?{#period: AM}"
+      - "~{#hours: 13}:{#minutes: 00}"

@@ -3,11 +3,16 @@ imports:
 
 classes:
 
-  Currency:
-    Usd:
+  - class: Usd
+    parent: Currency
+    patterns:
       - "$"
-    Eur:
+
+  - class: Eur
+    parent: Currency
+    patterns:
       - "€"
 
-  Money:
-    - "~$1"
+  - class: Money
+    patterns:
+      - "~$1"
