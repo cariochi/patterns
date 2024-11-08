@@ -4,12 +4,12 @@ imports:
 classes:
 
   - class: Usd
-    parent: Currency
+    extends: Currency
     patterns:
       - "$"
 
   - class: Eur
-    parent: Currency
+    extends: Currency
     patterns:
       - "€"
 

@@ -1,28 +1,25 @@
 classes:
 
   - class: Real
-    parent: Number
+    extends: Number
     patterns:
       - "\d+\.\d+"
 
   - class: Integer
-    parent: Number
+    extends: Number
     patterns:
       - "\d+"
       - "~1 thousand"
 
-  - class: E3
-    parent: Multiplier
+  - class: Multiplier.E3
     patterns:
       - "thousand"
 
-  - class: E6
-    parent: Multiplier
+  - class: Multiplier.E6
     patterns:
       - "million"
 
-  - class: E9
-    parent: Multiplier
+  - class: Multiplier.E9
     patterns:
       - "billion"
 

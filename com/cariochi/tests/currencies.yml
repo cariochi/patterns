@@ -4,17 +4,17 @@ imports:
 classes:
 
   - class: USD
-    parent: Currency
+    extends: Currency
     patterns:
       - $
 
   - class: EUR
-    parent: Currency
+    extends: Currency
     patterns:
       - €
 
   - class: POUND
-    parent: Currency
+    extends: Currency
     patterns:
       - £
 

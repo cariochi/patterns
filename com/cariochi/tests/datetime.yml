@@ -10,72 +10,72 @@ classes:
       - "~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}"
 
   - class: 1
-    parent: Month
+    extends: Month
     patterns:
       - January
 
   - class: 2
-    parent: Month
+    extends: Month
     patterns:
       - February
 
   - class: 3
-    parent: Month
+    extends: Month
     patterns:
       - March
 
   - class: 4
-    parent: Month
+    extends: Month
     patterns:
       - April
 
   - class: 5
-    parent: Month
+    extends: Month
     patterns:
       - May
 
   - class: 6
-    parent: Month
+    extends: Month
     patterns:
       - June
 
   - class: 7
-    parent: Month
+    extends: Month
     patterns:
       - July
 
   - class: 8
-    parent: Month
+    extends: Month
     patterns:
       - August
 
   - class: 9
-    parent: Month
+    extends: Month
     patterns:
       - September
 
   - class: 10
-    parent: Month
+    extends: Month
     patterns:
       - October
 
   - class: 11
-    parent: Month
+    extends: Month
     patterns:
       - November
 
   - class: 12
-    parent: Month
+    extends: Month
     patterns:
       - December
 
   - class: AM
-    parent: TimePeriod
+    extends: TimePeriod
     patterns:
       - "(?-i)AM"
 
   - class: PM
-    parent: TimePeriod
+    extends: TimePeriod
     patterns:
       - "(?-i)PM"
 

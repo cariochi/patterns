@@ -4,31 +4,31 @@ imports:
 classes:
 
   - class: British
-    parent: MeasurementUnit
+    extends: MeasurementUnit
 
   - class: Foot
-    parent: British
+    extends: British
     patterns:
       - foot
       - feet
       - ft
 
   - class: Inch
-    parent: British
+    extends: British
     patterns:
       - inch(es)?
 
   - class: SI
-    parent: MeasurementUnit
+    extends: MeasurementUnit
 
   - class: Meter
-    parent: SI
+    extends: SI
     patterns:
       - meters?
       - metres?
 
   - class: Centimeter
-    parent: SI
+    extends: SI
     patterns:
       - centimeters?
       - centimetres?
