@@ -9,75 +9,47 @@ classes:
       - '~{#month: 07}/{#day: 12}/{#year: 2020}'
       - '~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}'
 
-  - class: 1
-    extends: Month
-    patterns:
-      - January
+  - class: Month.JAN
+    patterns: [ 'January' ]
 
-  - class: 2
-    extends: Month
-    patterns:
-      - February
+  - class: Month.FEB
+    patterns: [ 'February' ]
 
-  - class: 3
-    extends: Month
-    patterns:
-      - March
+  - class: Month.MAR
+    patterns: [ 'March' ]
 
-  - class: 4
-    extends: Month
-    patterns:
-      - April
+  - class: Month.APR
+    patterns: [ 'April' ]
 
-  - class: 5
-    extends: Month
-    patterns:
-      - May
+  - class: Month.MAY
+    patterns: [ 'May' ]
 
-  - class: 6
-    extends: Month
-    patterns:
-      - June
+  - class: Month.JUN
+    patterns: [ 'June' ]
 
-  - class: 7
-    extends: Month
-    patterns:
-      - July
+  - class: Month.JUL
+    patterns: [ 'July' ]
 
-  - class: 8
-    extends: Month
-    patterns:
-      - August
+  - class: Month.AUG
+    patterns: [ 'August' ]
 
-  - class: 9
-    extends: Month
-    patterns:
-      - September
+  - class: Month.SEP
+    patterns: [ 'September' ]
 
-  - class: 10
-    extends: Month
-    patterns:
-      - October
+  - class: Month.OCT
+    patterns: [ 'October' ]
 
-  - class: 11
-    extends: Month
-    patterns:
-      - November
+  - class: Month.NOV
+    patterns: [ 'November' ]
 
-  - class: 12
-    extends: Month
-    patterns:
-      - December
+  - class: Month.DEC
+    patterns: [ 'December' ]
 
-  - class: AM
-    extends: TimePeriod
-    patterns:
-      - '(?-i)AM'
+  - class: TimePeriod.AM
+    patterns: [ '(?-i)AM' ]
 
-  - class: PM
-    extends: TimePeriod
-    patterns:
-      - '(?-i)PM'
+  - class: TimePeriod.PM
+    patterns: [ '(?-i)PM' ]
 
   - class: Time
     patterns:

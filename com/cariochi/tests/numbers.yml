@@ -2,27 +2,20 @@ classes:
 
   - class: Real
     extends: Number
-    patterns:
-      - '\d+\.\d+'
+    patterns: [ '\d+\.\d+' ]
 
   - class: Integer
     extends: Number
-    patterns:
-      - '\d+'
-      - '~1 thousand'
+    patterns: [ '\d+', '~1 thousand' ]
 
   - class: Multiplier.E3
-    patterns:
-      - 'thousand'
+    patterns: [ 'thousand' ]
 
   - class: Multiplier.E6
-    patterns:
-      - 'million'
+    patterns: [ 'million' ]
 
   - class: Multiplier.E9
-    patterns:
-      - 'billion'
+    patterns: [ 'billion' ]
 
   - class: Percent
-    patterns:
-      - '~100%'
+    patterns: [ '~100%' ]

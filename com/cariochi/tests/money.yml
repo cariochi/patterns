@@ -5,14 +5,11 @@ classes:
 
   - class: Usd
     extends: Currency
-    patterns:
-      - '$'
+    patterns: [ '$' ]
 
   - class: Eur
     extends: Currency
-    patterns:
-      - '€'
+    patterns: [ '€' ]
 
   - class: Money
-    patterns:
-      - '~$1'
+    patterns: [ '~$1' ]

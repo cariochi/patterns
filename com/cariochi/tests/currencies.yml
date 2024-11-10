@@ -5,19 +5,15 @@ classes:
 
   - class: USD
     extends: Currency
-    patterns:
-      - $
+    patterns: [ '$' ]
 
   - class: EUR
     extends: Currency
-    patterns:
-      - €
+    patterns: [ '€' ]
 
   - class: POUND
     extends: Currency
-    patterns:
-      - £
+    patterns: [ '£' ]
 
   - class: Money
-    patterns:
-      - '~€1'
+    patterns: [ '~€1' ]
