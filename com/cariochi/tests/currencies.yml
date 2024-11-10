@@ -3,17 +3,9 @@ imports:
 
 classes:
 
-  - class: USD
-    extends: Currency
-    patterns: [ '$' ]
+  Currency:
+    USD: [ '$' ]
+    EUR: [ '€' ]
+    POUND: [ '£' ]
 
-  - class: EUR
-    extends: Currency
-    patterns: [ '€' ]
-
-  - class: POUND
-    extends: Currency
-    patterns: [ '£' ]
-
-  - class: Money
-    patterns: [ '~€1' ]
+  Money: [ '~€1' ]

@@ -3,13 +3,8 @@ imports:
 
 classes:
 
-  - class: Usd
-    extends: Currency
-    patterns: [ '$' ]
+  Currency:
+    Usd: [ '$' ]
+    Eur: [ '€' ]
 
-  - class: Eur
-    extends: Currency
-    patterns: [ '€' ]
-
-  - class: Money
-    patterns: [ '~$1' ]
+  Money: [ '~$1' ]

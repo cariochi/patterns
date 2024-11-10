@@ -3,55 +3,29 @@ imports:
 
 classes:
 
-  - class: Date
-    patterns:
-      - '~{#year: 2000}-{#month: 05}-{#day: 10}'
-      - '~{#month: 07}/{#day: 12}/{#year: 2020}'
-      - '~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}'
+  Date:
+    - '~{#year: 2000}-{#month: 05}-{#day: 10}'
+    - '~{#month: 07}/{#day: 12}/{#year: 2020}'
+    - '~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}'
 
-  - class: Month.JAN
-    patterns: [ 'January' ]
+  Month:
+    JAN: [ 'January' ]
+    FEB: [ 'February' ]
+    MAR: [ 'March' ]
+    APR: [ 'April' ]
+    MAY: [ 'May' ]
+    JUN: [ 'June' ]
+    JUL: [ 'July' ]
+    AUG: [ 'August' ]
+    SEP: [ 'September' ]
+    OCT: [ 'October' ]
+    NOV: [ 'November' ]
+    DEC: [ 'December' ]
 
-  - class: Month.FEB
-    patterns: [ 'February' ]
+  TimePeriod:
+    AM: [ '(?-i)AM' ]
+    PM: [ '(?-i)PM' ]
 
-  - class: Month.MAR
-    patterns: [ 'March' ]
-
-  - class: Month.APR
-    patterns: [ 'April' ]
-
-  - class: Month.MAY
-    patterns: [ 'May' ]
-
-  - class: Month.JUN
-    patterns: [ 'June' ]
-
-  - class: Month.JUL
-    patterns: [ 'July' ]
-
-  - class: Month.AUG
-    patterns: [ 'August' ]
-
-  - class: Month.SEP
-    patterns: [ 'September' ]
-
-  - class: Month.OCT
-    patterns: [ 'October' ]
-
-  - class: Month.NOV
-    patterns: [ 'November' ]
-
-  - class: Month.DEC
-    patterns: [ 'December' ]
-
-  - class: TimePeriod.AM
-    patterns: [ '(?-i)AM' ]
-
-  - class: TimePeriod.PM
-    patterns: [ '(?-i)PM' ]
-
-  - class: Time
-    patterns:
-      - '~{#hours: 1}:{#minutes: 30}\s?{#period: AM}'
-      - '~{#hours: 13}:{#minutes: 00}'
+  Time:
+    - '~{#hours: 1}:{#minutes: 30}\s?{#period: AM}'
+    - '~{#hours: 13}:{#minutes: 00}'

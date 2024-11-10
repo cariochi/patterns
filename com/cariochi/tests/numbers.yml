@@ -1,21 +1,12 @@
 classes:
 
-  - class: Real
-    extends: Number
-    patterns: [ '\d+\.\d+' ]
+  Number:
+    Real: [ '\d+\.\d+' ]
+    Integer: [ '\d+', '~1 thousand' ]
 
-  - class: Integer
-    extends: Number
-    patterns: [ '\d+', '~1 thousand' ]
+  Multiplier:
+    E3: [ 'thousand' ]
+    E6: [ 'million' ]
+    E9: [ 'billion' ]
 
-  - class: Multiplier.E3
-    patterns: [ 'thousand' ]
-
-  - class: Multiplier.E6
-    patterns: [ 'million' ]
-
-  - class: Multiplier.E9
-    patterns: [ 'billion' ]
-
-  - class: Percent
-    patterns: [ '~100%' ]
+  Percent: [ '~100%' ]

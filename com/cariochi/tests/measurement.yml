@@ -3,21 +3,12 @@ imports:
 
 classes:
 
-  - class: British.Foot
-    extends: Units
-    patterns: [ 'foot', 'feet', 'ft' ]
+  Units:
+    British:
+      Foot: [ 'foot', 'feet', 'ft' ]
+      Inch: [ 'inch(es)?' ]
+    SI:
+      Meter: [ 'meters?', 'metres?' ]
+      Centimeter: [ 'centimeters?', 'centimetres?' ]
 
-  - class: British.Inch
-    extends: Units
-    patterns: [ 'inch(es)?' ]
-
-  - class: SI.Meter
-    extends: Units
-    patterns: [ 'meters?', 'metres?' ]
-
-  - class: SI.Centimeter
-    extends: Units
-    patterns: [ 'centimeters?', 'centimetres?' ]
-
-  - class: Measurement
-    patterns: [ '~1 meter' ]
+  Measurement: [ '~1 meter' ]
