@@ -3,26 +3,26 @@ classes:
   - class: Real
     extends: Number
     patterns:
-      - "\d+\.\d+"
+      - '\d+\.\d+'
 
   - class: Integer
     extends: Number
     patterns:
-      - "\d+"
-      - "~1 thousand"
+      - '\d+'
+      - '~1 thousand'
 
   - class: Multiplier.E3
     patterns:
-      - "thousand"
+      - 'thousand'
 
   - class: Multiplier.E6
     patterns:
-      - "million"
+      - 'million'
 
   - class: Multiplier.E9
     patterns:
-      - "billion"
+      - 'billion'
 
   - class: Percent
     patterns:
-      - "~100%"
+      - '~100%'

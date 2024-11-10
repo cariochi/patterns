@@ -5,9 +5,9 @@ classes:
 
   - class: Date
     patterns:
-      - "~{#year: 2000}-{#month: 05}-{#day: 10}"
-      - "~{#month: 07}/{#day: 12}/{#year: 2020}"
-      - "~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}"
+      - '~{#year: 2000}-{#month: 05}-{#day: 10}'
+      - '~{#month: 07}/{#day: 12}/{#year: 2020}'
+      - '~{#month: November} {#day: 1}(?:st|nd|rd|th)?, {#year: 1991}'
 
   - class: 1
     extends: Month
@@ -72,14 +72,14 @@ classes:
   - class: AM
     extends: TimePeriod
     patterns:
-      - "(?-i)AM"
+      - '(?-i)AM'
 
   - class: PM
     extends: TimePeriod
     patterns:
-      - "(?-i)PM"
+      - '(?-i)PM'
 
   - class: Time
     patterns:
-      - "~{#hours: 1}:{#minutes: 30}\s?{#period: AM}"
-      - "~{#hours: 13}:{#minutes: 00}"
+      - '~{#hours: 1}:{#minutes: 30}\s?{#period: AM}'
+      - '~{#hours: 13}:{#minutes: 00}'

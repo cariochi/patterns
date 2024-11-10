@@ -20,4 +20,4 @@ classes:
 
   - class: Money
     patterns:
-      - "~€1"
+      - '~€1'

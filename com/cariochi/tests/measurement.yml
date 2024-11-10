@@ -35,4 +35,4 @@ classes:
 
   - class: Measurement
     patterns:
-      - "~1 meter"
+      - '~1 meter'
