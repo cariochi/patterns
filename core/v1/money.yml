@@ -9,6 +9,6 @@ Money:
   $fields:
     currency: Currency
     amount: Number
-  $match:
+  $patterns:
     - '#{currency}\s*#{amount}'
     - '#{amount}\s*#{currency}'

@@ -9,10 +9,10 @@ Number:
     $fields:
       value: Number
       scale: Scale
-    $match:
+    $patterns:
       - '\d+(,\d{3})*'
       - '#{value} #{scale}'
 
 Percent:
   $fields: { value: Number }
-  $match: '#{value}%'
+  $patterns: '#{value}%'

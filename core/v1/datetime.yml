@@ -21,7 +21,7 @@ Date:
       year: { $type: Integer, $match: '\d{4}' }
       month: { $type: Integer, $match: '0[1-9]|1[0-2]' }
       day: { $type: Integer, $match: '0[1-9]|[12]\d|3[01]' }
-    $match:
+    $patterns:
       - '#{year}-#{month}-#{day}'
       - '#{month}/#{day}/#{year}'
       - '#{day}-#{month}-#{year}'
@@ -31,7 +31,7 @@ Date:
       year: { $type: Integer, $match: '\d{4}' }
       month: Month
       day: { $type: Integer, $match: '[1-9]|[12]\d|3[01]' }
-    $match: '#{month} #{day}(st|nd|rd|th)?, #{year}'
+    $patterns: '#{month} #{day}(st|nd|rd|th)?, #{year}'
 
 TimePeriod:
   AM: 'AM'
@@ -42,6 +42,6 @@ Time:
     hours: Integer
     minutes: Integer
     period: TimePeriod
-  $match:
+  $patterns:
     - '#{hours}:#{minutes}\s?#{period}'
     - '#{hours}:#{minutes}'
